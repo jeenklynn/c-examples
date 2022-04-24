@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+
+main(){
+   setlocale(LC_ALL, "Turkish");
+   int toplam = 0;
+   int sayi = 0;
+   do
+   {
+      printf("Bir sayı girin :");
+      scanf("%d",&sayi);
+      toplam = toplam + sayi;
+   }while(sayi !=0);
+   
+   printf("%d",toplam);
+getch();
+}
