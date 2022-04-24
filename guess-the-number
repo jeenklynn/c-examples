@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <conio.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+int rastgele();
+int tahmin(int thmn);
+void ekran(int adet);
+main()
+{
+	setlocale(LC_ALL, "Turkish");
+	int sayi = 0, adet = 0;
+	sayi = rastgele();
+	adet = tahmin(sayi);
+	ekran(adet);
+	getch();
+}
+int rastgele()
+{
+	srand(time(NULL));
+	int sayi;
+	sayi=1 + rand()%10;
+	return sayi;
+}
+int tahmin(int sayi)
+{
+	int sayac = 0, girilensayi = 0;
+	do{
+	printf("\nSayı tahminini gir: ");
+	scanf("%d",&girilensayi);
+	sayac++;
+	if(girilensayi > uretilensayi)
+		printf("\ntahmini küçült");
+	else if(girilensayi < uretilensayi)
+		printf("\ntahmini büyült");
+	}while(girilensayi != uretilensayi);
+	return(sayac);
+}
+void ekran(int adet)
+{
+	printf("\n%d. tahmininde sayıyı buldun",adet);
+}
