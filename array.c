@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <time.h>
-main()
-{  
+main(){  
 // hangi indekste hangi değerin olduğunu gösteren döngü
 setlocale(LC_ALL, "Turkish");
 int sayi[10];
