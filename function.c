@@ -5,7 +5,7 @@ int topla(int a,int b);
 main(){
 	// iki sayıyı toplayan fonksiyon
 	setlocale(LC_ALL, "Turkish");
-	printf("iki sayının toplamı: %d", topla(5,10));
+	printf("İki sayının toplamı: %d", topla(5,10));
 	getch();
 }
 int topla(int a, int b)
