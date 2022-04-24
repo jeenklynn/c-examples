@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <time.h>
+main(){
+// beşe beş matris oluşturup son sütuna önceki sütunların toplamını yazdıran program
+int sayi[5][5];
+int toplam=0;
+srand(time(NULL));
+
+for (int i=0; i<5; i++)
+{
+  for (int j=0; j<4; j++)
+  {
+  sayi[i][j]=10+rand()%90;// 0,0   0,1  0,2  0,3
+  toplam+=sayi[i][j];     
+  }
+sayi[i][4]=toplam;   //0,4
+toplam=0;
+}
+for(int i=0; i<5; i++)
+{
+ for (int j=0; j<5; j++)
+  {
+   printf("%d\t", sayi[i][j]);
+  }
+printf("\n");
+}
+getch();
+}
+
