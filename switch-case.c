@@ -3,21 +3,21 @@
 main(){
 setlocale(LC_ALL, "Turkish");
 char harf;
-printf("Bir karakter girin\n");
+printf("Bir karakter gir\n");
 scanf("%c",&harf);
 switch(harf)
 	{
 		case 'a':
-			printf("a harfine bastınız\n");
+			printf("a harfine bastın\n");
 			break;
 		case 'b':
-			printf("b harfine bastınız\n");
+			printf("b harfine bastın\n");
 			break;
 		case 'c':
-			printf("c harfine bastınız\n");
+			printf("c harfine bastın\n");
 			break;
 		default:
-			printf("a, b, c harflerine basmadınız");
+			printf("a, b, c harflerine basmadın");
 	}
 getch();
 }
